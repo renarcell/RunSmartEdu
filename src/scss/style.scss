@@ -1,0 +1,19 @@
+@import "base/mixins";
+@import "base/vars";
+@import "base/fonts";
+
+
+* {
+    font-family: "Museo Sans Cyrl";
+}
+
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+@import "blocks/buttons";
+@import "blocks/titles";
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/advantages";
