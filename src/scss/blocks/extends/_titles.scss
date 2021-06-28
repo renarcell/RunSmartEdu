@@ -1,0 +1,16 @@
+h1, h2, h3 {
+    margin: 0;
+}
+
+.title {
+    font-size: 30px;
+    color: rgb(13, 13, 13);
+    text-align: center;
+    text-transform: uppercase;
+    &_left {
+        font-size: 36px;
+        color: rgb(255, 255, 255);
+        text-align: left;  
+    }
+}
+  

@@ -5,6 +5,7 @@
 
 * {
     font-family: "Museo Sans Cyrl";
+    
 }
 
 
@@ -12,8 +13,10 @@
     width: 940px;
     margin: 0 auto;
 }
-@import "blocks/buttons";
-@import "blocks/titles";
+@import "blocks/extends/buttons";
+@import "blocks/extends/titles";
+@import "blocks/extends/forms";
 @import "blocks/header";
 @import "blocks/promo";
 @import "blocks/advantages";
+@import "blocks/consultation";
