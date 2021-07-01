@@ -1,5 +1,23 @@
 .carousel {
-    .carousel-m {
+    padding: 81px;
+    .carousel-pulse {
+        position: relative;
+        width: 750px;
         margin: 0 auto;
+        .slick-prev, .slick-next {
+            position: absolute;
+            border: none;
+            background: #fff;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .slick-prev {
+            left: -66px;
+        }
+        .slick-next {
+            right: -66px;
+        }
+
     }
 }

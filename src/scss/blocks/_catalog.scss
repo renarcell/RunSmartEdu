@@ -1,0 +1,111 @@
+.catalog {
+    padding-top: 108px;
+    &-captions {
+        display: flex;
+        justify-content: center;
+        margin-top: 68px;
+    }
+    &__tab {
+        width: 220px;
+        height: 50px;
+        border: 2px solid;
+        border-color: rgb(207, 207, 207);
+        transform: skewX(-25deg);
+        margin: 0 5px;
+        font-size: 18px;
+        color: rgb(107, 107, 107);
+        text-transform: uppercase;
+        line-height: 48px;
+        text-align: center;
+        cursor: pointer;
+        div {
+            transform: skewX(25deg);
+        }
+    }
+
+    div.catalog__tab.catalog__tab-active {
+        background-color: $main_color;
+        border-color: $main_color;
+        color: rgb(255, 255, 255);
+    }
+
+    &-items {
+        display: none;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-top: 54px;
+
+    }
+
+    .catalog-items.catalog__tab-active {
+        display: flex;
+    }
+
+    &__item {
+        border-width: 2px;
+        border-color: rgb(231, 231, 231);
+        border-style: solid;
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+        width: 298px;
+        height: 440px;
+        margin: 5px;
+        &:nth-child(3n + 1) {
+            margin-left: 0;
+        }
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        img {
+            display: block;
+            height: 200px;
+            max-width: 100%; 
+            margin: 0 auto;
+        }
+        hr {
+            border-bottom: none;
+            background-color: rgb(150, 150, 150);
+            margin: 20px 0;
+        }
+    }
+    &__item-title {
+        margin-top: 16px;
+        font-size: 16px;
+        color: rgb(21, 21, 21);
+        text-align: center;
+    }
+    &__descr {
+        font-size: 14px;
+        color: rgb(21, 21, 21);
+        text-align: center;
+        margin-top: 8px;
+        line-height: 18px;
+    }
+    &__details-switch {
+        display: block;
+        font-size: 14px;
+        color: rgb(170, 6, 6);
+        text-decoration: underline;
+        text-align: center;
+        margin-top: 12px;
+    }
+    &__after-hr {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__prices {
+        .old-price {
+            font-size: 14px;
+            color: rgb(85, 85, 85);
+            text-decoration: line-through;
+            text-align: left;
+        }
+        .new-price {
+            font-size: 20px;
+            color: rgb(13, 13, 13);
+            text-align: left;
+            line-height: 20px;
+        }
+    }
+}
+  
