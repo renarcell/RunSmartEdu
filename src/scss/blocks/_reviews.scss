@@ -1,0 +1,41 @@
+.reviews {
+    padding: 100px 0 90px 0;
+    .review {
+        display: flex;
+        img {
+            width: 169px;
+            height: 169px;
+            flex: 0 0 auto;
+            margin-right: 60px;
+            margin-top: 4px;
+        }
+        &:first-child {
+            margin-top: 70px;
+        }
+        &__name {
+            font-size: 18px;
+            color: rgb(21, 21, 21);
+            line-height: 1.2;
+            text-align: left;  
+        }
+        &__remark {
+            font-size: 14px;
+            color: rgb(100, 100, 100);
+            margin-top: 6px;
+        }
+        &__comment {
+            font-size: 16px;
+            color: rgb(44, 44, 44);
+            width: 675px;
+            line-height: 18px;
+            height: 130px;
+            margin-top: 15px;
+
+        }
+    }
+    hr {
+        background-color: rgb(210, 210, 210); 
+        margin: 50px 0;
+    }
+
+}
