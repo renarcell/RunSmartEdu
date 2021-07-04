@@ -13,4 +13,12 @@ $(document).ready(function() {
         .addClass('catalog__tab-active').siblings().removeClass('catalog__tab-active')
         .closest('div.catalog-tabs').find('div.catalog-items').removeClass('catalog__tab-active').eq($(this).index()).addClass('catalog__tab-active');
     });
+
+    $("[data-modal=consultation]").on('click', function() {
+      $('.overlay, #modal-consultation').fadeIn('slow');
+    });
+
+    $(".modal__cross").on('click', function() {
+      $('.overlay, .modal').fadeOut('slow');
+    });
 })
